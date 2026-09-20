@@ -34,15 +34,12 @@ print("Testing data:", X_test.shape)
 
 from sklearn.linear_model import LogisticRegression
 
-# Model banao
 model = LogisticRegression(max_iter=1000)
 
-# Model ko training data se sikhao
 model.fit(X_train, y_train)
 
 print("Model training complete")
 
-# Test data par andaza lagwao
 y_pred = model.predict(X_test)
 
 print("First 10 predictions:", y_pred[:10])
